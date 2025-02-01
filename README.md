@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/vercel/next.js/canary/docs/public/images/next.svg" width="120" alt="Next.js Logo" />
+<img src="https://nextjs.org/static/favicon/favicon-32x32.png" width="120" alt="Next.js Logo" />
 
 # Frontend de Superhéroes con Next.js y Tailwind
 
