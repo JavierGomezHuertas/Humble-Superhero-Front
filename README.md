@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<img src="https://raw.githubusercontent.com/vercel/next.js/canary/docs/public/images/next.svg" width="120" alt="Next.js Logo" />
 
-## Getting Started
+# Frontend de Superhéroes con Next.js y Tailwind
 
-First, run the development server:
+Front para la Api de gestión de superhéroes. Diseñada con un estilo sencillo y un poco tecno construida con Next.js.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Características
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Interfaz cyberpunk moderna y responsive
+- Gestión de superhéroes:
+  - Creación de nuevos héroes con validación en tiempo real
+  - Listado ordenado por nivel de humildad
+  - Tarjetas interactivas con diseño tecno
+- Diseño adaptativo (mobile-first)
+- Efectos visuales y animaciones
+- Manejo de estados y errores
+- Integración con API REST
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📋 Requisitos Previos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js v20+
+- npm v9+
+- API de Superhéroes (backend) corriendo en puerto 3000 o el elegido en .env
 
-## Learn More
+## 🔧 Instalación
 
-To learn more about Next.js, take a look at the following resources:
+Clonar repositorio:
+git clone https://github.com/TuUsuario/superhero-frontend.git
+cd superhero-frontend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Instalar dependencias:
+npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Configurar variables de entorno:
+.env.example
 
-## Deploy on Vercel
+## 🏃 Ejecución
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+npm run dev    La aplicación estará disponible en: http://localhost:3001 o el elegido en .env
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎨 Estilo
+
+- Paleta de colores:
+  - Principal: `#007BFF`
+  - Secundario: `#00FF99`
+  - Acento: `#FFD700`
+  - Alerta: `#FF3131`
+  - Fondo: `#121212`
+
+## 🔄 Integración con Backend
+
+Endpoints Consumidos:
+- `POST /superheroes`: Crear superhéroe
+- `GET /superheroes`: Listar superhéroes
+
+## 🧪 Validaciones
+
+- Nombre: Campo requerido
+- Superpoder: Campo requerido
+- Nivel de Humildad:
+  - Numérico entre 1 y 10
+  - Máximo 1 decimal
+  - Retroalimentación visual
+
+## ⏳ Si tuviera más tiempo...
+
+Estas son algunas mejoras y características que implementaría en futuras versiones:
+
+### 💅 UI/UX
+- Modo claro/oscuro
+- Temas personalizables
+- Animaciones de transición
+- Skeleton loaders
+
+### 🛠️ Funcionalidades
+- Búsqueda y filtrado de héroes
+- Edición y eliminación de héroes
+- Paginación de resultados
+- Vista detalle de héroe
+
+### 📱 Responsive
+- Mejoras para tablets
+- Diseño específico para móviles
+- PWA (Progressive Web App)
+
+### 🔒 Seguridad
+- Autenticación de usuarios
+- Roles y permisos
+- Protección de rutas
+
+## 👥 Colaboración en Equipo
+
+Ejemplo de practicas para trabajo en equipo:
+
+## 🤝 División de Tareas
+
+Frontend Core:
+Componentes React
+Integración con API
+Manejo de estado
+
+UI/UX:
+Diseño responsive
+Animaciones
+Accesibilidad
+
+Testing:
+Pruebas unitarias
+Testing
+QA
+
+## 📝 Flujo de Trabajo
+
+1. Git Flow simplificado
+   - main: producción
+   - develop: desarrollo
+   - feature/*: nuevas funcionalidades
+
+Code review
+Commits semánticos (feat:, fix:, style:)
+
+## 📅 Coordinación
+Dailys 15 mins cada mañana para:
+
+Compartir progreso
+
+Identificar bloqueos
+
+Alinear prioridades

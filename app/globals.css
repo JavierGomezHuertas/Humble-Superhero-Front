@@ -19,3 +19,31 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  .cyber-button {
+    @apply relative overflow-hidden font-bold py-3 px-6 rounded-lg 
+           transition-all duration-300 transform hover:scale-105 
+           shadow-lg border-2 border-transparent;
+  }
+  
+  .cyber-button::before {
+    @apply content-[''] absolute inset-0 bg-gradient-to-r 
+           opacity-0 transition-opacity duration-300;
+  }
+  
+  .cyber-button:hover::before {
+    @apply opacity-20;
+  }
+  
+  .cyber-card {
+    @apply bg-gray-900 p-6 rounded-xl border-2 border-opacity-20 
+           hover:border-opacity-40 transition-all duration-300 
+           hover:shadow-2xl relative overflow-hidden;
+  }
+  
+  .cyber-card::after {
+    @apply content-[''] absolute inset-0 border-2 border-opacity-10 
+           pointer-events-none;
+  }
+}
